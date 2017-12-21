@@ -8,9 +8,9 @@ Colnames of the gene expression dataset need to match with the rownames of the s
 
 # Running GESTURE 
 Four functions are needed to run GESTURE and predict the classification of independent samples: 
-- stlTrain.r
+- gestureTrain.r
 - trainFinalClassifiers.r
-- stlFinalClassifier.r
-- stlPredict.r
+- gestureFinalClassifier.r
+- gesturePredict.r
 
 The script runGesture.r provides the code to run the entire algorithm, which relies on the 4 functions above.
