@@ -17,3 +17,6 @@ Four functions are needed to run GESTURE and predict the classification of indep
 The script runGesture.r provides the code to run the entire algorithm, which relies on the 4 functions above.
 
 Note that the gestureTrain function is relatively slow, with 12 repeats per run, training classifiers for 30 gene sets takes ~1 hour (although this obviously also depends on the size of your dataset). I made this a seperate function to make it easier to run the algorithm parallel (the training of the final classifier and predicting new patients is much faster). If you want to run GESTURE on many gene sets (>100), I recommend seperate runs of gestureTrain with subsets of your gene sets. Then merge the output from the seperate runs and use that as input for gestureFinalClassifier.r. 
+
+# Additional files in the repository 
+The files survivalBortezomib, FoldsBortezomib and FoldsLenalidomide are associated with the manuscript about GESTURE. The survivaldata contained within the survivalBortezomib file is associated with GEO datasets GSE2658 and GSE19784. The files FoldsBortezomib and FoldsLenalidomide contain the assignment of samples to different folds in the crossvalidation contained within the manuscript, to ensure reproducibility of the results. 
