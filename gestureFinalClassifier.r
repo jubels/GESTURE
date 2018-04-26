@@ -124,7 +124,7 @@ FinalClassifier = function(surv, gep, sets, results, maxUse = 1000){
 	
 	use <- which(mean.HR <= sort(mean.HR, decreasing = FALSE)[g])
 	#### train Final Classifier
-	finalClassifier = trainFinalClassifiers(gep = gep, surv = surv, sets = sets[use], toi = settings$toi, z = settings$z, g = settings$g, min.size = settings$min.size,  dist.measure = settings$dist.measure, stratify = settings$stratify, nbrs = settings$nbrs, seed = settings$seed)
+	finalClassifier = trainFinalClassifiers(gep = gep, surv = surv, sets = sets[use], toi = settings$toi, z = settings$z, g = settings$g, min.size = settings$min.size, stratify = settings$stratify, nbrs = settings$nbrs, seed = settings$seed)
 	
 	
 	use.c <- finalClassifier[[1]]
