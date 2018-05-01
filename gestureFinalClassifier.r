@@ -35,7 +35,7 @@ FinalClassifier = function(surv, gep, sets, results, maxUse = 1000){
 			training[x,1,1] <- summary(coxph(Surv(surv.t[,1],surv.t[,2])~surv.t[,3] + strata(surv.t[,4]) , data = surv.t, subset = class.ab[,top] == 1))$coef[2]
 			training[x,1,2] <- summary(coxph(Surv(surv.t[,1],surv.t[,2])~surv.t[,3] + strata(surv.t[,4]) , data = surv.t, subset = class.ab[,top] == 1))$coef[5]
 			training[x,1,3] <- summary(coxph(Surv(surv.v[,1],surv.v[,2])~surv.v[,3] + strata(surv.v[,4]) , data = surv.v, subset = class.d[,top] == 1))$coef[2]
-			training[x,1,4] <- summary(coxph(Surv(surv.v[,1],surv.v[,2])~surv[.v,3] + strata(surv.v[,4]) , data = surv.v, subset = class.d[,top] == 1))$coef[5]
+			training[x,1,4] <- summary(coxph(Surv(surv.v[,1],surv.v[,2])~surv.v[,3] + strata(surv.v[,4]) , data = surv.v, subset = class.d[,top] == 1))$coef[5]
 		}
 		if(stratify == "NO"){
 			training[x,1,1] <- summary(coxph(Surv(surv.t[,1],surv.t[,2])~surv.t[,3], data = surv.t, subset = class.ab[,top] == 1))$coef[2]
