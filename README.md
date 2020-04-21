@@ -1,5 +1,5 @@
 # GESTURE
-GESTURE (Gene-Expression based Simulated Treatment Using similaRity between patiEnts) implements the concept of Simulated Treatment Learning for gene expression datasets in R. 
+GESTURE (Gene-Expression based Simulated Treatment Using similaRity between patiEnts) implements the concept of Simulated Treatment Learning for gene expression datasets in R. This software may be used for non-commercial purposes; the software license is provided in the license.md file. 
 
 # Input files
 GESTURE needs a gene expression dataset and survival dataset as input. It also needs you to define gene sets you want to test.  
